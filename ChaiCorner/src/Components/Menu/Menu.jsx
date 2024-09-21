@@ -64,6 +64,24 @@ const Menu = () => {
         price: "88.50",
         description: "A soothing herbal infusion made with a blend of natural herbs.delivering a comforting and authentic chai experience.",
       },
+      {
+        imgSrc: "https://images.pexels.com/photos/5389352/pexels-photo-5389352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name: "Pink Herbal Tea",
+        price: "98.50",
+        description: "A soothing herbal infusion made with a blend of natural herbs.delivering a comforting and authentic chai experience.",
+      },
+      {
+        imgSrc: "https://images.pexels.com/photos/8329965/pexels-photo-8329965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name: "Herbal Lemon Glassy Tea",
+        price: "128.50",
+        description: "A soothing herbal infusion made with a blend of natural herbs.delivering a comforting and authentic chai experience.",
+      },
+      {
+        imgSrc: "https://images.pexels.com/photos/4428355/pexels-photo-4428355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name: "Strawberry Milk tea",
+        price: "265.50",
+        description: "A soothing herbal infusion made with a blend of natural herbs.delivering a comforting and authentic chai experience.",
+      },
     // Add more tea items here as needed
   ];
 
@@ -80,10 +98,10 @@ const Menu = () => {
       transition={{ duration: 0.8 }}
     >
       <div className="Menu">
-        <h1 style={{paddingTop:"150px",textAlign:"center"}}>Try now!!</h1>
+        <h1 style={{paddingTop:"100px",textAlign:"center"}}>Try now!!</h1>
         {cartMessage && <div className="cart-message">{cartMessage}</div>}
         <div className="Herbal">
-          <h2>Herbal Chai</h2>
+          <h2 style={{fontSize:"30px"}}>Herbal Chai</h2>
           <div className="herbalteas">
             {teaData.map((tea, index) => (
               <TeaItem 
