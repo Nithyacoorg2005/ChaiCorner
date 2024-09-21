@@ -3,6 +3,7 @@ import './Navbar.css'
 import { Link } from 'react-router-dom'
 import logo from "../../images/image.png"
 import { motion } from 'framer-motion'
+import { FaShoppingCart } from "react-icons/fa";
 
 
 const Navbar = () => {
@@ -22,7 +23,7 @@ const Navbar = () => {
         <li><Link to="/Menu">Menu</Link></li>
         <li><Link to="/MorePage">More</Link></li>
         <li><Link to="/Contact">Contact us</Link></li>
-        <li><Link to="/Cart">My Cart</Link></li>
+        <li><Link to="/Cart">My Cart<FaShoppingCart/></Link></li>
            </ul>
    </div>
       
