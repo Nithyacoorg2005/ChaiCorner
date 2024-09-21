@@ -27,3 +27,25 @@
 .navbar ul li a:hover{
     color:#fff;
  }
+ @media (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* Show toggle button on small screens */
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust based on your navbar height */
+      left: 0;
+      right: 0;
+      background-color: #fff; /* Change as needed */
+      display: none; /* Hide links by default */
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+      text-align: center; /* Center the links */
+    }
+  }
