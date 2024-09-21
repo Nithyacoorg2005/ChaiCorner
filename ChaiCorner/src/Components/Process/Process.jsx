@@ -133,9 +133,7 @@ const Process = () => {
             adjust anything further?
           </p>
         </div>
-
-        <button style={{width:"180px"}} className="cta-button">Try It Yourself</button>
-      </div>
+        </div>
       <footer class="site-footer">
     <p>&copy; 2024 Nithyashree CS. All Rights Reserved.</p>
 </footer>
