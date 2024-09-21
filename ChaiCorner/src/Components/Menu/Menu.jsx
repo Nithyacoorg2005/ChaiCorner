@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Menu.css';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom'; // Import for navigation
+import { useNavigate } from 'react-router-dom';
 
 // Reusable TeaItem component
 const TeaItem = ({ imgSrc, name, price, description, onAddToCart }) => {
@@ -40,25 +40,13 @@ const Menu = ({ handleAddToCart }) => {
       imgSrc: "https://images.pexels.com/photos/1872886/pexels-photo-1872886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       name: "Classic Chai",
       price: 25.60,
-      description: "Chai Corner's Classic Chai offers a perfect blend of rich tea leaves and aromatic spices, delivering a comforting chai experience.",
+      description: "Chai Corner's Classic Chai offers a perfect blend of rich tea leaves and aromatic spices.",
     },
     {
       imgSrc: "https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       name: "Green Tea",
       price: 30.00,
       description: "A refreshing blend of green tea leaves that rejuvenates your senses.",
-    },
-    {
-      imgSrc: "https://images.pexels.com/photos/1362537/pexels-photo-1362537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      name: "Herbal Infusion",
-      price: 28.50,
-      description: "A soothing herbal infusion made with a blend of natural herbs.",
-    },
-    {
-      imgSrc: "https://images.pexels.com/photos/734983/pexels-photo-734983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      name: "Black Lemon Tea",
-      price: 58.66,
-      description: "A tangy, rich black tea with a touch of lemon.",
     },
     // Add more tea items here as needed
   ];
