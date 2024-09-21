@@ -1,49 +1,41 @@
 import React from 'react';
-import './Cart.css'; // Make sure to create styles for the cart
 
-const CartPage = ({ cartItems, setCartItems }) => {
-  // Calculate the total price of the items in the cart
+const CartPage = ({ cartItems, handleIncrease, handleDecrease, handleRemove }) => {
   const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
 
-  const handleIncrease = (index) => {
-    const newCartItems = [...cartItems];
-    newCartItems[index].quantity += 1;
-    setCartItems(newCartItems);
-  };
-
-  const handleDecrease = (index) => {
-    const newCartItems = [...cartItems];
-    if (newCartItems[index].quantity > 1) {
-      newCartItems[index].quantity -= 1;
-      setCartItems(newCartItems);
-    }
-  };
-
-  const handleDelete = (index) => {
-    const newCartItems = cartItems.filter((_, i) => i !== index);
-    setCartItems(newCartItems);
-  };
-
   return (
-    <div className="cart-page">
+    <div>
       <h1>Your Cart</h1>
       {cartItems.length > 0 ? (
-        <div className="cart-items">
-          {cartItems.map((item, index) => (
-            <div className="cart-item" key={index}>
-              <img src={item.imgSrc} alt={item.name} className="cart-item-image" />
-              <div className="cart-item-details">
-                <h2>{item.name}</h2>
-                <h3>${item.price.toFixed(2)}</h3>
-                <div className="quantity-controls">
-                  <button onClick={() => handleDecrease(index)}>-</button>
-                  <span>{item.quantity}</span>
-                  <button onClick={() => handleIncrease(index)}>+</button>
-                </div>
-                <button className="delete-button" onClick={() => handleDelete(index)}>Delete</button>
-              </div>
-            </div>
-          ))}
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {cartItems.map((item, index) => (
+                <tr key={index}>
+                  <td>{item.name}</td>
+                  <td>${item.price.toFixed(2)}</td>
+                  <td>
+                    <button onClick={() => handleDecrease(index)}>-</button>
+                    {item.quantity}
+                    <button onClick={() => handleIncrease(index)}>+</button>
+                  </td>
+                  <td>${(item.price * item.quantity).toFixed(2)}</td>
+                  <td>
+                    <button onClick={() => handleRemove(index)}>Remove</button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
           <h2>Total Price: ${totalPrice.toFixed(2)}</h2>
         </div>
       ) : (

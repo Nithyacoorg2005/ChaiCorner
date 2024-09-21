@@ -35,6 +35,7 @@ const Menu = ({ handleAddToCart }) => {
   const [cartMessage, setCartMessage] = useState('');
   const navigate = useNavigate(); // For navigating to the cart page
 
+
   const teaData = [
     {
       imgSrc: "https://images.pexels.com/photos/1872886/pexels-photo-1872886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -59,6 +60,8 @@ const Menu = ({ handleAddToCart }) => {
       navigate('/cart'); // Navigate to Cart page after adding to cart
     }, 1000); // Delay for cart message display
   };
+  
+  
 
   return (
     <motion.div
