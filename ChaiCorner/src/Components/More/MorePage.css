@@ -1,0 +1,51 @@
+.more-page {
+    padding: 20px;
+  }
+  
+  .special-offers,
+  .faqs,
+  .blogs-articles {
+    margin-bottom: 40px;
+  }
+  
+  .offer-image,
+  .blog-image {
+    width: 100%; /* Makes images responsive */
+    height: auto;
+    max-width: 600px; /* Maximum width for better layout */
+    margin-top: 10px;
+  }
+  
+  .faq-item {
+    margin: 10px 0;
+  }
+  
+  .faq-question {
+    background: none;
+    border: none;
+    color: #00796b;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .faq-answer {
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+  }
+  
+  .scrolling-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1c1b1b;
+    color:rgb(249, 245, 245);
+  }
+  

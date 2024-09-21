@@ -1,0 +1,52 @@
+.Menu{
+    padding-top:100px;
+  }
+  .herbb{
+    width:350px;
+    height:auto;
+    margin-left:50px;
+    border-radius: 10px;
+  
+    
+  }
+  .herbalteas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+  }
+  .site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+  }
+  
+  .site-footer p {
+    margin: 0;
+  }
+  .Menu {
+    padding: 20px;
+  }
+  
+  .herbalteas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Space between grid items */
+  }
+  
+  .cart-message {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e0f7fa;
+    color: #00796b;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  
+  
