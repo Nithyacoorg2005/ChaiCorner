@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Menu.css';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom'; // Import for navigation
 
 // Reusable TeaItem component
 const TeaItem = ({ imgSrc, name, price, description, onAddToCart }) => {
@@ -30,64 +31,45 @@ const TeaItem = ({ imgSrc, name, price, description, onAddToCart }) => {
   );
 };
 
-const Menu = () => {
+const Menu = ({ handleAddToCart }) => {
   const [cartMessage, setCartMessage] = useState('');
-  
+  const navigate = useNavigate(); // For navigating to the cart page
+
   const teaData = [
     {
       imgSrc: "https://images.pexels.com/photos/1872886/pexels-photo-1872886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       name: "Classic Chai",
-      price: "25.60",
-      description: "Chai Corner's Classic Chai offers a perfect blend of rich tea leaves and aromatic spices, delivering a comforting",
+      price: 25.60,
+      description: "Chai Corner's Classic Chai offers a perfect blend of rich tea leaves and aromatic spices, delivering a comforting chai experience.",
     },
     {
       imgSrc: "https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       name: "Green Tea",
-      price: "30.00",
-      description: "A refreshing blend of green tea leaves that rejuvenates your senses.delivering a comforting and authentic chai experience.",
+      price: 30.00,
+      description: "A refreshing blend of green tea leaves that rejuvenates your senses.",
     },
     {
       imgSrc: "https://images.pexels.com/photos/1362537/pexels-photo-1362537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       name: "Herbal Infusion",
-      price: "28.50",
-      description: "A soothing herbal infusion made with a blend of natural herbs.delivering a comforting and authentic chai experience.",
+      price: 28.50,
+      description: "A soothing herbal infusion made with a blend of natural herbs.",
     },
     {
-        imgSrc: "https://images.pexels.com/photos/734983/pexels-photo-734983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        name: "Black Lemon Tea",
-        price: "58.66",
-        description: "A soothing herbal infusion made with a blend of natural herbs.delivering a comforting and authentic chai experience.",
-      },
-      {
-        imgSrc: "https://images.pexels.com/photos/8850651/pexels-photo-8850651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        name: "Herbal honey",
-        price: "88.50",
-        description: "A soothing herbal infusion made with a blend of natural herbs.delivering a comforting and authentic chai experience.",
-      },
-      {
-        imgSrc: "https://images.pexels.com/photos/5389352/pexels-photo-5389352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        name: "Pink Herbal Tea",
-        price: "98.50",
-        description: "A soothing herbal infusion made with a blend of natural herbs.delivering a comforting and authentic chai experience.",
-      },
-      {
-        imgSrc: "https://images.pexels.com/photos/8329965/pexels-photo-8329965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        name: "Herbal Lemon Glassy Tea",
-        price: "128.50",
-        description: "A soothing herbal infusion made with a blend of natural herbs.delivering a comforting and authentic chai experience.",
-      },
-      {
-        imgSrc: "https://images.pexels.com/photos/4428355/pexels-photo-4428355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        name: "Strawberry Milk tea",
-        price: "265.50",
-        description: "A soothing herbal infusion made with a blend of natural herbs.delivering a comforting and authentic chai experience.",
-      },
+      imgSrc: "https://images.pexels.com/photos/734983/pexels-photo-734983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      name: "Black Lemon Tea",
+      price: 58.66,
+      description: "A tangy, rich black tea with a touch of lemon.",
+    },
     // Add more tea items here as needed
   ];
 
-  const handleAddToCart = (name) => {
-    setCartMessage(`${name} added to cart!`);
-    setTimeout(() => setCartMessage(''), 2000); // Clear message after 2 seconds
+  const handleBuyNow = (tea) => {
+    handleAddToCart(tea); // Add item to the cart
+    setCartMessage(`${tea.name} added to cart!`);
+    setTimeout(() => {
+      setCartMessage('');
+      navigate('/cart'); // Navigate to Cart page after adding to cart
+    }, 1000); // Delay for cart message display
   };
 
   return (
@@ -98,16 +80,16 @@ const Menu = () => {
       transition={{ duration: 0.8 }}
     >
       <div className="Menu">
-        <h1 style={{paddingTop:"100px",textAlign:"center"}}>Try now!!</h1>
+        <h1 style={{ paddingTop: "100px", textAlign: "center" }}>Try now!!</h1>
         {cartMessage && <div className="cart-message">{cartMessage}</div>}
         <div className="Herbal">
-          <h2 style={{fontSize:"30px"}}>Herbal Chai</h2>
+          <h2 style={{ fontSize: "30px" }}>Herbal Chai</h2>
           <div className="herbalteas">
             {teaData.map((tea, index) => (
-              <TeaItem 
-                key={index} 
-                {...tea} 
-                onAddToCart={() => handleAddToCart(tea.name)} 
+              <TeaItem
+                key={index}
+                {...tea}
+                onAddToCart={() => handleBuyNow(tea)} // Call handleBuyNow when 'Buy now' is clicked
               />
             ))}
           </div>
