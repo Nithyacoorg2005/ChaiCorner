@@ -6,6 +6,7 @@ import Process from './Components/Process/Process'
 import Contact from './Components/Contact/Contact'
 import Menu from './Components/Menu/Menu'
 import MorePage from './Components/More/MorePage'
+import CartPage from './Components/Cart/Cart'
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
 
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/Menu" element={<Menu/>}/>
         <Route path="/MorePage" element={<MorePage/>}/>
         <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/Cart" element={<CartPage/>}/>
         </Routes>
      
     </BrowserRouter>
