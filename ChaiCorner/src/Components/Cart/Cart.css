@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     column-width: 100%;
+    padding:20px;
    
   }
   
@@ -28,6 +29,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: 5px;
     
   }
   
@@ -35,14 +37,17 @@
     width: 100px;
     height: 100px;
     margin-right: 20px;
+    margin-left: 5px;
   }
   
   .cart-item-details {
     flex-grow: 1;
+    margin-left: 5px;
   }
   
   .quantity-controls {
     display:inline-flex ;
+    margin-left: 5px;
 
   }
   
@@ -106,7 +111,8 @@
   
   input[type="number"] {
     width: 20px;
-    text-align: center; /* Center text in input */
+    text-align: center;
+    margin-left: 5px; /* Center text in input */
   }
   table {
     width: 800px;
@@ -114,6 +120,7 @@
     padding: 20px;
     margin: 0 auto;
   }
+  
   
   tr {
     line-height: 1.5;

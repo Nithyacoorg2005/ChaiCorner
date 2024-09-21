@@ -8,7 +8,7 @@ const CartPage = ({ cartItems, handleIncrease, handleDecrease, handleRemove }) =
       <h1 style={{marginTop:"50px",marginLeft:"50px"}}>Your Cart</h1>
       {cartItems.length > 0 ? (
         <div>
-          <table style={{  width: "320%",
+          <table style={{  width: "290%",
     margin: "20px auto",
     borderCollapse: "collapse",
     boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)", marginLeft:"50px"
@@ -18,9 +18,9 @@ const CartPage = ({ cartItems, handleIncrease, handleDecrease, handleRemove }) =
                 <th style={{ 
     textAlign:"left"}}  >Item</th>
                 <th style={{textAlign:"left"}} >Price</th>
-                <th style={{width:"50px",marginLeft:"10px"}}  >Quantity</th>
+                <th style={{width:"50px",marginLeft:"10px",}}  >Quantity</th>
                 <th style={{ padding: "15px", borderBottom: '1px solid #ddd', textAlign: 'center', }} >Total</th>
-                <th  style={{width:"50px"}}>Action</th>
+                <th style={{width:"50px"}}>Action</th>
               </tr>
             </thead>
             <tbody>

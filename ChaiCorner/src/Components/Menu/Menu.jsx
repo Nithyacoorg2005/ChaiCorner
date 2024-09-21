@@ -49,6 +49,42 @@ const Menu = ({ handleAddToCart }) => {
       price: 30.00,
       description: "A refreshing blend of green tea leaves that rejuvenates your senses.",
     },
+    {
+      imgSrc: "https://images.pexels.com/photos/4487510/pexels-photo-4487510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      name: " Brewing Herbal  Tea",
+      price: 85.67,
+      description: "A refreshing blend of green tea leaves that rejuvenates your senses.",
+    },
+    {
+      imgSrc: "https://images.pexels.com/photos/374000/pexels-photo-374000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      name: "Ginger Tea",
+      price: 75.00,
+      description: "A refreshing blend of green tea leaves that rejuvenates your senses.",
+    },
+    {
+      imgSrc: "https://images.pexels.com/photos/1298613/pexels-photo-1298613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      name: "Strong Base Tea",
+      price: 350.00,
+      description: "A refreshing blend of green tea leaves that rejuvenates your senses.",
+    },
+    {
+      imgSrc: "https://images.pexels.com/photos/5946637/pexels-photo-5946637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      name: "Black Tea",
+      price: 86.00,
+      description: "A refreshing blend of green tea leaves that rejuvenates your senses.",
+    },
+    {
+      imgSrc: "https://images.pexels.com/photos/4552171/pexels-photo-4552171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      name: " Herbal Green Tea",
+      price: 75.00,
+      description: "A refreshing blend of green tea leaves that rejuvenates your senses.",
+    },
+    {
+      imgSrc: "https://images.pexels.com/photos/298853/pexels-photo-298853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      name: "Steam Tea",
+      price: 80.00,
+      description: "A refreshing blend of green tea leaves that rejuvenates your senses.",
+    },
     // Add more tea items here as needed
   ];
 
