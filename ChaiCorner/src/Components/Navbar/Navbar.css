@@ -13,7 +13,7 @@
     font-size: 19px;
     text-transform: uppercase;
     font-weight: 700;
-    padding-top:22px;
+    padding-top:15px;
     padding-right:22px;
     cursor: pointer;
    
@@ -49,3 +49,26 @@
       text-align: center; /* Center the links */
     }
   }
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 15px 20px; /* Add some padding */
+    background-color: #2fb607; /* Background color */
+    color: white; /* Text color */
+    position: fixed; /* Fixes the navbar to the top */
+    width: 100%; /* Full width */
+    top: 0; /* Aligns to the top */
+    z-index: 1000; /* Ensure it stays above other elements */
+  }
+  
+  .nav-item {
+    margin: 0 15px; /* Space between nav items */
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Text color */
+  }
+  
+  .nav-item:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  

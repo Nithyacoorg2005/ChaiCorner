@@ -15,7 +15,7 @@ const Navbar = () => {
   >
     <>
    <div className="navbar">
-    <img src={logo} alt=""/>
+    <img style={{Height:"250px",width:"250px",marginLeft:"-15px"}} src={logo} alt=""/>
     <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/Process">Process</Link></li>

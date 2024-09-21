@@ -7,12 +7,13 @@
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 300px;
+    width: 200px;
     border-radius: 5px;
     z-index: 1000;
   }
   .cart-page {
     padding: 20px;
+    width:80%;
   }
   
   .cart-items {
@@ -37,12 +38,12 @@
   }
   
   .quantity-controls {
-    display: flex;
-    align-items: center;
+    display:inline-flex ;
+
   }
   
   .quantity-controls button {
-    margin: 0 10px;
+     padding:10px;
   }
   
   .delete-button {
@@ -52,5 +53,10 @@
     border-radius: 5px;
     padding: 5px 10px;
   }
+
+
+  
+
+
   
   
