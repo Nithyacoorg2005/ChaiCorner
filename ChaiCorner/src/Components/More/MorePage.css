@@ -14,6 +14,7 @@
     height: auto;
     max-width: 600px; /* Maximum width for better layout */
     margin-top: 10px;
+    
   }
   
   .faq-item {
@@ -47,5 +48,8 @@
     padding: 20px 0;
     background-color: #1c1b1b;
     color:rgb(249, 245, 245);
+  }
+  .blog-image{
+    margin-left:430px;
   }
   
