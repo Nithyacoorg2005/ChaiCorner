@@ -56,14 +56,14 @@
     
   }
   button {
-    width: 20px; /* Set button width to 100px */
-    background-color: #007BFF; /* Blue button */
+    width: 20px;
+    background-color: #007BFF; 
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 8px; /* Adjust padding if needed */
+    padding: 8px; 
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s; 
   }
   
   .delete-button {
@@ -76,43 +76,43 @@
   table {
     width: 80%;
     margin: 20px auto;
-    border-collapse: collapse; /* Removes space between cells */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    border-collapse: collapse; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
   }
   
   th, td {
-    padding: 15px; /* Increased padding for better spacing */
-    text-align: left; /* Align text to the left */
+    padding: 15px;
+    text-align: left; 
   }
   
   th {
-    background-color: #f4f4f4; /* Light background for headers */
+    background-color: #f4f4f4; 
     font-weight: bold;
-    border-bottom: 2px solid #ddd; /* Bottom border for headers */
+    border-bottom: 2px solid #ddd;
   }
   
   tr:nth-child(even) {
-    background-color: #f9f9f9; /* Zebra striping for even rows */
+    background-color: #f9f9f9; 
   }
   
   button {
-    background-color: #007BFF; /* Blue button */
+    background-color: #007BFF; 
     color: white;
     border: none;
     border-radius: 5px;
     padding: 8px 12px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s; 
   }
   
   button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
   }
   
   input[type="number"] {
     width: 20px;
     text-align: center;
-    margin-left: 5px; /* Center text in input */
+    margin-left: 5px; 
   }
   table {
     width: 800px;
