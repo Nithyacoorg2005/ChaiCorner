@@ -3,7 +3,6 @@ import './Menu.css';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
-// Reusable TeaItem component
 const TeaItem = ({ imgSrc, name, price, description, onAddToCart }) => {
   return (
     <div className="herbb">
@@ -33,7 +32,7 @@ const TeaItem = ({ imgSrc, name, price, description, onAddToCart }) => {
 
 const Menu = ({ handleAddToCart }) => {
   const [cartMessage, setCartMessage] = useState('');
-  const navigate = useNavigate(); // For navigating to the cart page
+  const navigate = useNavigate(); 
 
 
   const teaData = [
@@ -85,16 +84,16 @@ const Menu = ({ handleAddToCart }) => {
       price: 80.00,
       description: "A refreshing blend of green tea leaves that rejuvenates your senses.",
     },
-    // Add more tea items here as needed
+
   ];
 
   const handleBuyNow = (tea) => {
-    handleAddToCart(tea); // Add item to the cart
+    handleAddToCart(tea); 
     setCartMessage(`${tea.name} added to cart!`);
     setTimeout(() => {
       setCartMessage('');
-      navigate('/cart'); // Navigate to Cart page after adding to cart
-    }, 1000); // Delay for cart message display
+      navigate('/cart'); 
+    }, 1000); 
   };
   
   
@@ -116,7 +115,7 @@ const Menu = ({ handleAddToCart }) => {
               <TeaItem
                 key={index}
                 {...tea}
-                onAddToCart={() => handleBuyNow(tea)} // Call handleBuyNow when 'Buy now' is clicked
+                onAddToCart={() => handleBuyNow(tea)} 
               />
             ))}
           </div>
