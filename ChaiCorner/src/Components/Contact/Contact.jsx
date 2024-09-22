@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './Contact.css'; // Import the CSS file for styling
+import './Contact.css'; 
 import { motion } from 'framer-motion';
 
 const Contact = () => {
-  // State for form fields
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
     alert(`Thank you, ${name}! We have received your message.`);
     
-    // Reset form fields
+
     setName('');
     setEmail('');
     setMessage('');
