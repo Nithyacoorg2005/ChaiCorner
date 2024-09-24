@@ -36,7 +36,7 @@
   .herbalteas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Space between grid items */
+    gap: 20px; 
   }
   
   .cart-message {
