@@ -10,9 +10,9 @@
   
   .offer-image,
   .blog-image {
-    width: 100%; /* Makes images responsive */
+    width: 100%; 
     height: auto;
-    max-width: 600px; /* Maximum width for better layout */
+    max-width: 600px; 
     margin-top: 10px;
     
   }
