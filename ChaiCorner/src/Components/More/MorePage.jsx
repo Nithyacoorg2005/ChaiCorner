@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './MorePage.css'; // Ensure CSS is updated for new styles
+import './MorePage.css'; 
 import { motion } from 'framer-motion';
 
 const MorePage = () => {
@@ -15,7 +15,7 @@ const MorePage = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 50 }}
       transition={{ duration: 0.8 }}
-      style={{ marginTop: '80px' }} // Adjust for fixed navbar
+      style={{ marginTop: '80px' }}
     >
       <div className="more-page">
       <h2>Special Offers</h2>
