@@ -29,46 +29,46 @@
  }
  @media (max-width: 768px) {
     .menu-toggle {
-      display: block; /* Show toggle button on small screens */
+      display: block; 
     }
   
     .nav-links {
       flex-direction: column;
       position: absolute;
-      top: 60px; /* Adjust based on your navbar height */
+      top: 60px;
       left: 0;
       right: 0;
-      background-color: #fff; /* Change as needed */
-      display: none; /* Hide links by default */
+      background-color: #fff;
+      display: none; 
       padding: 10px 0;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
   
     .nav-links li {
       margin: 10px 0;
-      text-align: center; /* Center the links */
+      text-align: center; 
     }
   }
   .navbar {
     display: flex;
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center items vertically */
-    padding: 15px 20px; /* Add some padding */
-    background-color: #2fb607; /* Background color */
-    color: white; /* Text color */
-    position: fixed; /* Fixes the navbar to the top */
-    width: 100%; /* Full width */
-    top: 0; /* Aligns to the top */
-    z-index: 1000; /* Ensure it stays above other elements */
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 20px;
+    background-color: #2fb607; 
+    color: white; 
+    position: fixed;
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
   }
   
   .nav-item {
-    margin: 0 15px; /* Space between nav items */
-    text-decoration: none; /* Remove underline from links */
-    color: white; /* Text color */
+    margin: 0 15px; 
+    text-decoration: none; 
+    color: white; 
   }
   
   .nav-item:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
   }
   
