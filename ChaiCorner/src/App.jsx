@@ -15,9 +15,9 @@ const App = () => {
   const handleAddToCart = (item) => {
     const existingItemIndex = cartItems.findIndex(cartItem => cartItem.name === item.name);
     if (existingItemIndex > -1) {
-      handleIncrease(existingItemIndex); // Increase quantity if item already exists
+      handleIncrease(existingItemIndex); 
     } else {
-      setCartItems([...cartItems, { ...item, quantity: 1 }]); // Add new item with quantity 1
+      setCartItems([...cartItems, { ...item, quantity: 1 }]); 
     }
   };
 
